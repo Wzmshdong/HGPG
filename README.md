@@ -22,11 +22,12 @@ pip install -r requirements.txt
 ```
 mkdir -p datasets/pretrained 
 wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P datasets/pretrained
-```Modify the resume_file path in run_reverie.sh.
+```
 
-5. Download the resume_file from (https://www.dropbox.com/), and Modify the resume_file path in run_reverie.sh.
-```
-```
+5. Download the resume_file from (https://www.dropbox.com/), and modify the resume_file path in run_reverie.sh.
+   
+6. Download the bert-base-uncased from (https://huggingface.co/google-bert/bert-base-uncased), and modify the path in the [`map_nav_src/models/vlnbert_init.py`](./map_nav_src/main_reverie.py#L10).
+
 ## Fine-tuning & Evaluation
 
 Use pseudo interative demonstrator to fine-tune the model:
