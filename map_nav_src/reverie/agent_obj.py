@@ -23,7 +23,7 @@ from .agent_base import Seq2SeqAgent
 from models.graph_utils import GraphMap
 from models.model import VLNBert, Critic
 from models.ops import pad_tensors_wgrad
-import wandb
+#import wandb
 
 class GMapObjectNavAgent(Seq2SeqAgent):
     
@@ -565,7 +565,7 @@ class GMapObjectNavAgent(Seq2SeqAgent):
 
             pros = torch.distributions.Categorical(nav_probs)
             entropy_p = pros.entropy()
-            wandb.log({"entropy":entropy_p[0]})
+            #wandb.log({"entropy":entropy_p[0]})
 
             if self.args.condition :
                 pros = torch.distributions.Categorical(nav_probs)
