@@ -96,12 +96,12 @@ def parse_args():
     parser.add_argument('--condition', action='store_true', default=True)
     parser.add_argument('--full_history', action='store_true', default=True)
     parser.add_argument('--hypamas_a', type=float, default=0.5)
-    # parser.add_argument('--method', type=str, default='method1')
+    parser.add_argument('--method', type=str, default='method1')
     # parser.add_argument('--warmup_epochs', type=int, default=10)
     # parser.add_argument('--epochs', type=int, default=20)
     # parser.add_argument('--lr_scheduler', default='warmup', type=str)
     # parser.add_argument('--init_lr', type=float, default=0.01)
-    # parser.add_argument('--optim_select', action='store_true', default=False)
+    parser.add_argument('--optim_select', action='store_true', default=False)
 
 
     # Model hyper params:
@@ -134,13 +134,13 @@ def parse_args():
     parser.add_argument('--nr_groups', default=4, type=int)
     parser.add_argument('--blocks_per_group', default=1, type=int)
     parser.add_argument('--initial_channels', default=16, type=int)
-    parser.add_argument('--init_max_pool', action=argparse.BooleanOptionalAction,
+    parser.add_argument('--init_max_pool', action='store_true',
                         default=True)
-    parser.add_argument('--disable_pgn', action=argparse.BooleanOptionalAction,
+    parser.add_argument('--disable_pgn', action='store_true',
                         default=False)
     parser.add_argument('--vision_model_type', default='vit',
                         type=str)
-    parser.add_argument('--pretrained_pgn', action=argparse.BooleanOptionalAction,
+    parser.add_argument('--pretrained_pgn', action='store_true',
                         default=False)
     parser.add_argument('--size', default=36)
 
