@@ -20,7 +20,7 @@ from reverie.agent_obj import GMapObjectNavAgent
 from reverie.data_utils import ObjectFeatureDB, construct_instrs, load_obj2vps
 from reverie.env import ReverieObjectNavBatch
 from reverie.parser import parse_args
-import wandb
+#import wandb
 
 def build_dataset(args, rank=0):
     tok = get_tokenizer(args)
