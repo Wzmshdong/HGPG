@@ -12,7 +12,7 @@ import torch.nn as nn
 from torch import optim
 import torch.nn.functional as F
 from torch.nn.parallel import DistributedDataParallel as DDP
-from pgn.lr_schedulers.cosine_with_warmup import CosineWithWarmup
+#from pgn.lr_schedulers.cosine_with_warmup import CosineWithWarmup
 
 from utils.distributed import is_default_gpu
 from utils.logger import print_progress
