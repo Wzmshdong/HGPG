@@ -25,7 +25,8 @@ wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P datasets/pretrained
 ```Modify the resume_file path in run_reverie.sh.
 
 5. Download the resume_file from (https://www.dropbox.com/), and Modify the resume_file path in run_reverie.sh.
-
+```
+```
 ## Fine-tuning & Evaluation
 
 Use pseudo interative demonstrator to fine-tune the model:
