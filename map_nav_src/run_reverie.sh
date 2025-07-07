@@ -65,7 +65,7 @@ flag="--root_dir ${DATA_ROOT}
   #    --eval_first
 
 # test
-CUDA_VISIBLE_DEVICES='2' python main_nav_obj.py $flag  \
+CUDA_VISIBLE_DEVICES='2' python main_reverie.py $flag  \
      --tokenizer bert \
      --resume_file ../datasets/REVERIE/exprs_map/finetune/dagger-vitbase-seed.0/ckpts/best_val_unseen \
      --test --submit
