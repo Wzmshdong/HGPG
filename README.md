@@ -24,7 +24,7 @@ mkdir -p datasets/pretrained
 wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P datasets/pretrained
 ```
 
-5. Download the resume_file from [https://www.dropbox.com/](https://www.dropbox.com/scl/fi/tq1b29vdir534lpzn1wv1/new_0.5_best_val_unseen?rlkey=jf15bcdgy7q6juh1vbb8zaykf&st=c2au8udk&dl=0), and modify the resume_file path in run_reverie.sh.
+5. Download the resume_file from [Dropbox](https://www.dropbox.com/scl/fi/tq1b29vdir534lpzn1wv1/new_0.5_best_val_unseen?rlkey=jf15bcdgy7q6juh1vbb8zaykf&st=c2au8udk&dl=0), and modify the resume_file path in run_reverie.sh.
    
 6. Download the bert-base-uncased from (https://huggingface.co/google-bert/bert-base-uncased), and modify the path in the [`map_nav_src/models/vlnbert_init.py`](./map_nav_src/models/vlnbert_init.py#L10).
 
