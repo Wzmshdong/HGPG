@@ -16,7 +16,7 @@ from pgn.lr_schedulers.cosine_with_warmup import CosineWithWarmup
 
 from utils.distributed import is_default_gpu
 from utils.logger import print_progress
-import wandb
+#import wandb
 
 class BaseAgent(object):
     ''' Base class for an REVERIE agent to generate and save trajectories. '''
@@ -200,10 +200,10 @@ class Seq2SeqAgent(BaseAgent):
         print(self.vln_bert_optimizer.param_groups[0]['lr'])
 
         self.losses = []
-        wandb.init(
-        project="experiment",
-        name="lamde",
-    )
+        #wandb.init(
+        #project="experiment",
+        #name="lamde",
+    #)
         for iter in range(1, n_iters + 1):
             self.vln_bert_optimizer.zero_grad()
             self.critic_optimizer.zero_grad()
