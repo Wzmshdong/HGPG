@@ -17,6 +17,8 @@ from transformers import BertPreTrainedModel
 
 from .ops import create_transformer_encoder
 from .ops import extend_neg_masks, gen_seq_masks, pad_tensors_wgrad
+import sys
+sys.path.append('/root/mount/Matterport3DSimulator/VLN-DUET/map_nav_src/models')
 from pgn_models.tlpgn import TLPGN
 from pgn_models.iip import IIP
 from os import PathLike
