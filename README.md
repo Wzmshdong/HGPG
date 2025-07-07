@@ -28,6 +28,6 @@ wget https://nlp.cs.unc.edu/data/model_LXRT.pth -P datasets/pretrained
 Use pseudo interative demonstrator to fine-tune the model:
 ```finetune
 cd map_nav_src
-python main_reverie
+bash run_reverie.sh
 ```
 
