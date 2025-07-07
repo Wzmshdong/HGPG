@@ -40,7 +40,7 @@ flag="--root_dir ${DATA_ROOT}
       --max_objects 20
 
       --batch_size 4
-      --lr 5e-6
+      --lr 1e-5
       --iters 50000
       --log_every 1000
       --optim adamW
